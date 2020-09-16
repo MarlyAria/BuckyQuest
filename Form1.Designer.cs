@@ -47,15 +47,15 @@
             this.RedPotion = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.AttackBox = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.AttackUpButton = new System.Windows.Forms.Button();
+            this.AttackDownButton = new System.Windows.Forms.Button();
+            this.AttackLeftButton = new System.Windows.Forms.Button();
+            this.AttackRightButton = new System.Windows.Forms.Button();
             this.MoveBox = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.MoveRightButton = new System.Windows.Forms.Button();
+            this.MoveLeftButton = new System.Windows.Forms.Button();
+            this.MoveDownButton = new System.Windows.Forms.Button();
+            this.MoveUpButton = new System.Windows.Forms.Button();
             this.statsWindow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Bucky)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bat)).BeginInit();
@@ -259,10 +259,10 @@
             // AttackBox
             // 
             this.AttackBox.BackColor = System.Drawing.Color.Transparent;
-            this.AttackBox.Controls.Add(this.button4);
-            this.AttackBox.Controls.Add(this.button3);
-            this.AttackBox.Controls.Add(this.button2);
-            this.AttackBox.Controls.Add(this.button1);
+            this.AttackBox.Controls.Add(this.AttackRightButton);
+            this.AttackBox.Controls.Add(this.AttackLeftButton);
+            this.AttackBox.Controls.Add(this.AttackDownButton);
+            this.AttackBox.Controls.Add(this.AttackUpButton);
             this.AttackBox.Location = new System.Drawing.Point(935, 563);
             this.AttackBox.Name = "AttackBox";
             this.AttackBox.Size = new System.Drawing.Size(165, 120);
@@ -270,49 +270,49 @@
             this.AttackBox.TabStop = false;
             this.AttackBox.Text = "Attack";
             // 
-            // button1
+            // AttackUpButton
             // 
-            this.button1.Location = new System.Drawing.Point(61, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(39, 33);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "↑";
-            this.button1.UseVisualStyleBackColor = true;
+            this.AttackUpButton.Location = new System.Drawing.Point(61, 19);
+            this.AttackUpButton.Name = "AttackUpButton";
+            this.AttackUpButton.Size = new System.Drawing.Size(39, 33);
+            this.AttackUpButton.TabIndex = 0;
+            this.AttackUpButton.Text = "↑";
+            this.AttackUpButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // AttackDownButton
             // 
-            this.button2.Location = new System.Drawing.Point(61, 81);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(39, 33);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "↓";
-            this.button2.UseVisualStyleBackColor = true;
+            this.AttackDownButton.Location = new System.Drawing.Point(61, 81);
+            this.AttackDownButton.Name = "AttackDownButton";
+            this.AttackDownButton.Size = new System.Drawing.Size(39, 33);
+            this.AttackDownButton.TabIndex = 1;
+            this.AttackDownButton.Text = "↓";
+            this.AttackDownButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // AttackLeftButton
             // 
-            this.button3.Location = new System.Drawing.Point(16, 51);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(39, 33);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "←";
-            this.button3.UseVisualStyleBackColor = true;
+            this.AttackLeftButton.Location = new System.Drawing.Point(16, 51);
+            this.AttackLeftButton.Name = "AttackLeftButton";
+            this.AttackLeftButton.Size = new System.Drawing.Size(39, 33);
+            this.AttackLeftButton.TabIndex = 2;
+            this.AttackLeftButton.Text = "←";
+            this.AttackLeftButton.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // AttackRightButton
             // 
-            this.button4.Location = new System.Drawing.Point(106, 52);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(39, 31);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "→";
-            this.button4.UseVisualStyleBackColor = true;
+            this.AttackRightButton.Location = new System.Drawing.Point(106, 52);
+            this.AttackRightButton.Name = "AttackRightButton";
+            this.AttackRightButton.Size = new System.Drawing.Size(39, 31);
+            this.AttackRightButton.TabIndex = 3;
+            this.AttackRightButton.Text = "→";
+            this.AttackRightButton.UseVisualStyleBackColor = true;
             // 
             // MoveBox
             // 
             this.MoveBox.BackColor = System.Drawing.Color.Transparent;
-            this.MoveBox.Controls.Add(this.button5);
-            this.MoveBox.Controls.Add(this.button6);
-            this.MoveBox.Controls.Add(this.button7);
-            this.MoveBox.Controls.Add(this.button8);
+            this.MoveBox.Controls.Add(this.MoveRightButton);
+            this.MoveBox.Controls.Add(this.MoveLeftButton);
+            this.MoveBox.Controls.Add(this.MoveDownButton);
+            this.MoveBox.Controls.Add(this.MoveUpButton);
             this.MoveBox.Location = new System.Drawing.Point(749, 563);
             this.MoveBox.Name = "MoveBox";
             this.MoveBox.Size = new System.Drawing.Size(165, 120);
@@ -320,41 +320,41 @@
             this.MoveBox.TabStop = false;
             this.MoveBox.Text = "Move";
             // 
-            // button5
+            // MoveRightButton
             // 
-            this.button5.Location = new System.Drawing.Point(106, 52);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(39, 31);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "→";
-            this.button5.UseVisualStyleBackColor = true;
+            this.MoveRightButton.Location = new System.Drawing.Point(106, 52);
+            this.MoveRightButton.Name = "MoveRightButton";
+            this.MoveRightButton.Size = new System.Drawing.Size(39, 31);
+            this.MoveRightButton.TabIndex = 3;
+            this.MoveRightButton.Text = "→";
+            this.MoveRightButton.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // MoveLeftButton
             // 
-            this.button6.Location = new System.Drawing.Point(16, 51);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(39, 33);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "←";
-            this.button6.UseVisualStyleBackColor = true;
+            this.MoveLeftButton.Location = new System.Drawing.Point(16, 51);
+            this.MoveLeftButton.Name = "MoveLeftButton";
+            this.MoveLeftButton.Size = new System.Drawing.Size(39, 33);
+            this.MoveLeftButton.TabIndex = 2;
+            this.MoveLeftButton.Text = "←";
+            this.MoveLeftButton.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // MoveDownButton
             // 
-            this.button7.Location = new System.Drawing.Point(61, 81);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(39, 33);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "↓";
-            this.button7.UseVisualStyleBackColor = true;
+            this.MoveDownButton.Location = new System.Drawing.Point(61, 81);
+            this.MoveDownButton.Name = "MoveDownButton";
+            this.MoveDownButton.Size = new System.Drawing.Size(39, 33);
+            this.MoveDownButton.TabIndex = 1;
+            this.MoveDownButton.Text = "↓";
+            this.MoveDownButton.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // MoveUpButton
             // 
-            this.button8.Location = new System.Drawing.Point(61, 19);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(39, 33);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "↑";
-            this.button8.UseVisualStyleBackColor = true;
+            this.MoveUpButton.Location = new System.Drawing.Point(61, 19);
+            this.MoveUpButton.Name = "MoveUpButton";
+            this.MoveUpButton.Size = new System.Drawing.Size(39, 33);
+            this.MoveUpButton.TabIndex = 0;
+            this.MoveUpButton.Text = "↑";
+            this.MoveUpButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -418,15 +418,15 @@
         private System.Windows.Forms.PictureBox RedPotion;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.GroupBox AttackBox;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button AttackRightButton;
+        private System.Windows.Forms.Button AttackLeftButton;
+        private System.Windows.Forms.Button AttackDownButton;
+        private System.Windows.Forms.Button AttackUpButton;
         private System.Windows.Forms.GroupBox MoveBox;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button MoveRightButton;
+        private System.Windows.Forms.Button MoveLeftButton;
+        private System.Windows.Forms.Button MoveDownButton;
+        private System.Windows.Forms.Button MoveUpButton;
     }
 }
 
