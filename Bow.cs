@@ -1,8 +1,9 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace BuckyQuest
 {
-    internal class Bow : Weapon
+    class Bow : Weapon
     {
         public Bow(Game game, Point location) : base(game, location) { }
 

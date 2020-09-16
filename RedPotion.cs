@@ -1,8 +1,9 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace BuckyQuest
 {
-    internal class RedPotion : Weapon, IPotion
+    class RedPotion : Weapon, IPotion
     {
         public RedPotion(Game game, Point location) : base(game, location) { }
 

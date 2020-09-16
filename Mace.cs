@@ -1,8 +1,9 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace BuckyQuest
 {
-    internal class Mace : Weapon
+    class Mace : Weapon
     {
         public Mace(Game game, Point location) : base(game, location) { }
 
