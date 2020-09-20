@@ -71,6 +71,9 @@ namespace BuckyQuest
             }
         }
 
-       
+        private void MoveUpButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -5,15 +5,22 @@ namespace BuckyQuest
 {
     internal class BluePotion : Weapon , IPotion
     {
-        public BluePotion(Game game, Point location) : base(game, location) { }
+        public BluePotion(Game game, Point location) : base(game, location) 
+        {
+            Used = false;
+        }
 
         public override string Name { get { return "Blue Potion"; } }
 
-        public bool Used => throw new System.NotImplementedException();
+        public bool Used { get; private set; }
 
         public override void Attack(Direction direction, Random random)
         {
-            throw new NotImplementedException();
+            if (Used == false)
+            {
+                game.IncreasePlayerHealth(5, random);
+                Used = true;
+            }
         }
     }
 }

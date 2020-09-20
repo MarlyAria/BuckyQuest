@@ -5,15 +5,22 @@ namespace BuckyQuest
 {
     class RedPotion : Weapon, IPotion
     {
-        public RedPotion(Game game, Point location) : base(game, location) { }
+        public RedPotion(Game game, Point location) : base(game, location) 
+        {
+            Used = false;
+        }
 
         public override string Name { get { return "Red Potion"; } }
 
-        public bool Used => throw new System.NotImplementedException();
+        public bool Used { get; private set; }
 
         public override void Attack(Direction direction, Random random)
         {
-            throw new NotImplementedException();
+            if (Used == false)
+            {
+                game.IncreasePlayerHealth(10, random);
+                Used = true;
+            }
         }
     }
 }

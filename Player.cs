@@ -52,13 +52,32 @@ namespace BuckyQuest
             base.location = Move(direction, game.Boundaries);
             if (!game.WeaponInRoom.PickedUp)
             {
-                //see if the weapon is nearby, and possibly pick it up
+                if(Nearby(game.WeaponInRoom.Location, 1))
+                {
+                    inventory.Add(game.WeaponInRoom);
+                    game.WeaponInRoom.PickedUpWeapon(); // sets pickedup to true
+                    if (inventory.Count == 1)
+                    {
+                        Equip(game.WeaponInRoom.Name);
+                    }
+                }
             }
         }
 
         public void Attack(Direction direction, Random random)
         {
-            //your code goes here
+            if(equippedWeapon != null)
+            {
+                if(equippedWeapon is IPotion)
+                {
+                    equippedWeapon.Attack(direction, random);
+                    inventory.Remove(equippedWeapon);
+                }
+                else
+                {
+                    equippedWeapon.Attack(direction, random);
+                }
+            }
         }
     }
 }
