@@ -38,14 +38,14 @@
             this.playerHitPoints = new System.Windows.Forms.Label();
             this.PlayerLabel = new System.Windows.Forms.Label();
             this.Bucky = new System.Windows.Forms.PictureBox();
-            this.Bat = new System.Windows.Forms.PictureBox();
-            this.Ghost = new System.Windows.Forms.PictureBox();
-            this.Ghoul = new System.Windows.Forms.PictureBox();
-            this.Bow = new System.Windows.Forms.PictureBox();
-            this.Mace = new System.Windows.Forms.PictureBox();
-            this.BluePotion = new System.Windows.Forms.PictureBox();
-            this.RedPotion = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.batGame = new System.Windows.Forms.PictureBox();
+            this.ghostGame = new System.Windows.Forms.PictureBox();
+            this.ghoulGame = new System.Windows.Forms.PictureBox();
+            this.bowGame = new System.Windows.Forms.PictureBox();
+            this.maceGame = new System.Windows.Forms.PictureBox();
+            this.bluePotionGame = new System.Windows.Forms.PictureBox();
+            this.redPotionGame = new System.Windows.Forms.PictureBox();
+            this.swordGame = new System.Windows.Forms.PictureBox();
             this.AttackBox = new System.Windows.Forms.GroupBox();
             this.AttackRightButton = new System.Windows.Forms.Button();
             this.AttackLeftButton = new System.Windows.Forms.Button();
@@ -59,25 +59,25 @@
             this.swordInventory = new System.Windows.Forms.PictureBox();
             this.bowInventory = new System.Windows.Forms.PictureBox();
             this.maceInventory = new System.Windows.Forms.PictureBox();
-            this.BluePotionInventory = new System.Windows.Forms.PictureBox();
-            this.RedPotionInventory = new System.Windows.Forms.PictureBox();
+            this.bluePotionInventory = new System.Windows.Forms.PictureBox();
+            this.redPotionInventory = new System.Windows.Forms.PictureBox();
             this.statsWindow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Bucky)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Bat)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ghost)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ghoul)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Bow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Mace)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BluePotion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RedPotion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.batGame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostGame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghoulGame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bowGame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maceGame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bluePotionGame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redPotionGame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.swordGame)).BeginInit();
             this.AttackBox.SuspendLayout();
             this.MoveBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.swordInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bowInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maceInventory)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BluePotionInventory)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RedPotionInventory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bluePotionInventory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redPotionInventory)).BeginInit();
             this.SuspendLayout();
             // 
             // statsWindow
@@ -196,96 +196,96 @@
             this.Bucky.TabStop = false;
             this.Bucky.UseWaitCursor = true;
             // 
-            // Bat
+            // batGame
             // 
-            this.Bat.BackColor = System.Drawing.Color.Transparent;
-            this.Bat.Image = global::BuckyQuest.Properties.Resources.bat;
-            this.Bat.Location = new System.Drawing.Point(257, 130);
-            this.Bat.Name = "Bat";
-            this.Bat.Size = new System.Drawing.Size(50, 50);
-            this.Bat.TabIndex = 14;
-            this.Bat.TabStop = false;
-            this.Bat.UseWaitCursor = true;
+            this.batGame.BackColor = System.Drawing.Color.Transparent;
+            this.batGame.Image = global::BuckyQuest.Properties.Resources.bat;
+            this.batGame.Location = new System.Drawing.Point(257, 130);
+            this.batGame.Name = "batGame";
+            this.batGame.Size = new System.Drawing.Size(50, 50);
+            this.batGame.TabIndex = 14;
+            this.batGame.TabStop = false;
+            this.batGame.UseWaitCursor = true;
             // 
-            // Ghost
+            // ghostGame
             // 
-            this.Ghost.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ghostGame.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Ghost.BackColor = System.Drawing.Color.Transparent;
-            this.Ghost.Image = global::BuckyQuest.Properties.Resources.ghost;
-            this.Ghost.Location = new System.Drawing.Point(331, 130);
-            this.Ghost.Name = "Ghost";
-            this.Ghost.Size = new System.Drawing.Size(50, 50);
-            this.Ghost.TabIndex = 15;
-            this.Ghost.TabStop = false;
-            this.Ghost.UseWaitCursor = true;
+            this.ghostGame.BackColor = System.Drawing.Color.Transparent;
+            this.ghostGame.Image = global::BuckyQuest.Properties.Resources.ghost;
+            this.ghostGame.Location = new System.Drawing.Point(331, 130);
+            this.ghostGame.Name = "ghostGame";
+            this.ghostGame.Size = new System.Drawing.Size(50, 50);
+            this.ghostGame.TabIndex = 15;
+            this.ghostGame.TabStop = false;
+            this.ghostGame.UseWaitCursor = true;
             // 
-            // Ghoul
+            // ghoulGame
             // 
-            this.Ghoul.BackColor = System.Drawing.Color.Transparent;
-            this.Ghoul.Image = global::BuckyQuest.Properties.Resources.ghoul;
-            this.Ghoul.Location = new System.Drawing.Point(408, 130);
-            this.Ghoul.Name = "Ghoul";
-            this.Ghoul.Size = new System.Drawing.Size(50, 50);
-            this.Ghoul.TabIndex = 16;
-            this.Ghoul.TabStop = false;
-            this.Ghoul.UseWaitCursor = true;
+            this.ghoulGame.BackColor = System.Drawing.Color.Transparent;
+            this.ghoulGame.Image = global::BuckyQuest.Properties.Resources.ghoul;
+            this.ghoulGame.Location = new System.Drawing.Point(408, 130);
+            this.ghoulGame.Name = "ghoulGame";
+            this.ghoulGame.Size = new System.Drawing.Size(50, 50);
+            this.ghoulGame.TabIndex = 16;
+            this.ghoulGame.TabStop = false;
+            this.ghoulGame.UseWaitCursor = true;
             // 
-            // Bow
+            // bowGame
             // 
-            this.Bow.BackColor = System.Drawing.Color.Transparent;
-            this.Bow.Image = global::BuckyQuest.Properties.Resources.bow;
-            this.Bow.Location = new System.Drawing.Point(496, 130);
-            this.Bow.Name = "Bow";
-            this.Bow.Size = new System.Drawing.Size(50, 50);
-            this.Bow.TabIndex = 17;
-            this.Bow.TabStop = false;
-            this.Bow.UseWaitCursor = true;
+            this.bowGame.BackColor = System.Drawing.Color.Transparent;
+            this.bowGame.Image = global::BuckyQuest.Properties.Resources.bow;
+            this.bowGame.Location = new System.Drawing.Point(496, 130);
+            this.bowGame.Name = "bowGame";
+            this.bowGame.Size = new System.Drawing.Size(50, 50);
+            this.bowGame.TabIndex = 17;
+            this.bowGame.TabStop = false;
+            this.bowGame.UseWaitCursor = true;
             // 
-            // Mace
+            // maceGame
             // 
-            this.Mace.BackColor = System.Drawing.Color.Transparent;
-            this.Mace.Image = global::BuckyQuest.Properties.Resources.mace;
-            this.Mace.Location = new System.Drawing.Point(583, 130);
-            this.Mace.Name = "Mace";
-            this.Mace.Size = new System.Drawing.Size(50, 50);
-            this.Mace.TabIndex = 18;
-            this.Mace.TabStop = false;
-            this.Mace.UseWaitCursor = true;
+            this.maceGame.BackColor = System.Drawing.Color.Transparent;
+            this.maceGame.Image = global::BuckyQuest.Properties.Resources.mace;
+            this.maceGame.Location = new System.Drawing.Point(583, 130);
+            this.maceGame.Name = "maceGame";
+            this.maceGame.Size = new System.Drawing.Size(50, 50);
+            this.maceGame.TabIndex = 18;
+            this.maceGame.TabStop = false;
+            this.maceGame.UseWaitCursor = true;
             // 
-            // BluePotion
+            // bluePotionGame
             // 
-            this.BluePotion.BackColor = System.Drawing.Color.Transparent;
-            this.BluePotion.Image = global::BuckyQuest.Properties.Resources.potion_blue;
-            this.BluePotion.Location = new System.Drawing.Point(661, 130);
-            this.BluePotion.Name = "BluePotion";
-            this.BluePotion.Size = new System.Drawing.Size(50, 50);
-            this.BluePotion.TabIndex = 19;
-            this.BluePotion.TabStop = false;
-            this.BluePotion.UseWaitCursor = true;
+            this.bluePotionGame.BackColor = System.Drawing.Color.Transparent;
+            this.bluePotionGame.Image = global::BuckyQuest.Properties.Resources.potion_blue;
+            this.bluePotionGame.Location = new System.Drawing.Point(661, 130);
+            this.bluePotionGame.Name = "bluePotionGame";
+            this.bluePotionGame.Size = new System.Drawing.Size(50, 50);
+            this.bluePotionGame.TabIndex = 19;
+            this.bluePotionGame.TabStop = false;
+            this.bluePotionGame.UseWaitCursor = true;
             // 
-            // RedPotion
+            // redPotionGame
             // 
-            this.RedPotion.BackColor = System.Drawing.Color.Transparent;
-            this.RedPotion.Image = global::BuckyQuest.Properties.Resources.potion_red;
-            this.RedPotion.Location = new System.Drawing.Point(749, 130);
-            this.RedPotion.Name = "RedPotion";
-            this.RedPotion.Size = new System.Drawing.Size(50, 50);
-            this.RedPotion.TabIndex = 20;
-            this.RedPotion.TabStop = false;
-            this.RedPotion.UseWaitCursor = true;
+            this.redPotionGame.BackColor = System.Drawing.Color.Transparent;
+            this.redPotionGame.Image = global::BuckyQuest.Properties.Resources.potion_red;
+            this.redPotionGame.Location = new System.Drawing.Point(749, 130);
+            this.redPotionGame.Name = "redPotionGame";
+            this.redPotionGame.Size = new System.Drawing.Size(50, 50);
+            this.redPotionGame.TabIndex = 20;
+            this.redPotionGame.TabStop = false;
+            this.redPotionGame.UseWaitCursor = true;
             // 
-            // pictureBox9
+            // swordGame
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Image = global::BuckyQuest.Properties.Resources.sword;
-            this.pictureBox9.Location = new System.Drawing.Point(822, 130);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox9.TabIndex = 21;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.UseWaitCursor = true;
+            this.swordGame.BackColor = System.Drawing.Color.Transparent;
+            this.swordGame.Image = global::BuckyQuest.Properties.Resources.sword;
+            this.swordGame.Location = new System.Drawing.Point(822, 130);
+            this.swordGame.Name = "swordGame";
+            this.swordGame.Size = new System.Drawing.Size(50, 50);
+            this.swordGame.TabIndex = 21;
+            this.swordGame.TabStop = false;
+            this.swordGame.UseWaitCursor = true;
             // 
             // AttackBox
             // 
@@ -311,6 +311,7 @@
             this.AttackRightButton.Text = "→";
             this.AttackRightButton.UseVisualStyleBackColor = true;
             this.AttackRightButton.UseWaitCursor = true;
+            this.AttackRightButton.Click += new System.EventHandler(this.AttackRightButton_Click);
             // 
             // AttackLeftButton
             // 
@@ -321,6 +322,7 @@
             this.AttackLeftButton.Text = "←";
             this.AttackLeftButton.UseVisualStyleBackColor = true;
             this.AttackLeftButton.UseWaitCursor = true;
+            this.AttackLeftButton.Click += new System.EventHandler(this.AttackLeftButton_Click);
             // 
             // AttackDownButton
             // 
@@ -331,6 +333,7 @@
             this.AttackDownButton.Text = "↓";
             this.AttackDownButton.UseVisualStyleBackColor = true;
             this.AttackDownButton.UseWaitCursor = true;
+            this.AttackDownButton.Click += new System.EventHandler(this.AttackDownButton_Click);
             // 
             // AttackUpButton
             // 
@@ -341,6 +344,7 @@
             this.AttackUpButton.Text = "↑";
             this.AttackUpButton.UseVisualStyleBackColor = true;
             this.AttackUpButton.UseWaitCursor = true;
+            this.AttackUpButton.Click += new System.EventHandler(this.AttackUpButton_Click);
             // 
             // MoveBox
             // 
@@ -366,6 +370,7 @@
             this.MoveRightButton.Text = "→";
             this.MoveRightButton.UseVisualStyleBackColor = true;
             this.MoveRightButton.UseWaitCursor = true;
+            this.MoveRightButton.Click += new System.EventHandler(this.MoveRightButton_Click);
             // 
             // MoveLeftButton
             // 
@@ -376,6 +381,7 @@
             this.MoveLeftButton.Text = "←";
             this.MoveLeftButton.UseVisualStyleBackColor = true;
             this.MoveLeftButton.UseWaitCursor = true;
+            this.MoveLeftButton.Click += new System.EventHandler(this.MoveLeftButton_Click);
             // 
             // MoveDownButton
             // 
@@ -386,6 +392,7 @@
             this.MoveDownButton.Text = "↓";
             this.MoveDownButton.UseVisualStyleBackColor = true;
             this.MoveDownButton.UseWaitCursor = true;
+            this.MoveDownButton.Click += new System.EventHandler(this.MoveDownButton_Click);
             // 
             // MoveUpButton
             // 
@@ -409,6 +416,7 @@
             this.swordInventory.TabIndex = 24;
             this.swordInventory.TabStop = false;
             this.swordInventory.UseWaitCursor = true;
+            this.swordInventory.Click += new System.EventHandler(this.swordInventory_Click);
             // 
             // bowInventory
             // 
@@ -421,6 +429,7 @@
             this.bowInventory.TabIndex = 25;
             this.bowInventory.TabStop = false;
             this.bowInventory.UseWaitCursor = true;
+            this.bowInventory.Click += new System.EventHandler(this.bowInventory_Click);
             // 
             // maceInventory
             // 
@@ -433,30 +442,33 @@
             this.maceInventory.TabIndex = 26;
             this.maceInventory.TabStop = false;
             this.maceInventory.UseWaitCursor = true;
+            this.maceInventory.Click += new System.EventHandler(this.maceInventory_Click);
             // 
-            // BluePotionInventory
+            // bluePotionInventory
             // 
-            this.BluePotionInventory.BackColor = System.Drawing.Color.Transparent;
-            this.BluePotionInventory.BackgroundImage = global::BuckyQuest.Properties.Resources.potion_blue;
-            this.BluePotionInventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BluePotionInventory.Location = new System.Drawing.Point(469, 577);
-            this.BluePotionInventory.Name = "BluePotionInventory";
-            this.BluePotionInventory.Size = new System.Drawing.Size(100, 100);
-            this.BluePotionInventory.TabIndex = 27;
-            this.BluePotionInventory.TabStop = false;
-            this.BluePotionInventory.UseWaitCursor = true;
+            this.bluePotionInventory.BackColor = System.Drawing.Color.Transparent;
+            this.bluePotionInventory.BackgroundImage = global::BuckyQuest.Properties.Resources.potion_blue;
+            this.bluePotionInventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bluePotionInventory.Location = new System.Drawing.Point(469, 577);
+            this.bluePotionInventory.Name = "bluePotionInventory";
+            this.bluePotionInventory.Size = new System.Drawing.Size(100, 100);
+            this.bluePotionInventory.TabIndex = 27;
+            this.bluePotionInventory.TabStop = false;
+            this.bluePotionInventory.UseWaitCursor = true;
+            this.bluePotionInventory.Click += new System.EventHandler(this.bluePotionInventory_Click);
             // 
-            // RedPotionInventory
+            // redPotionInventory
             // 
-            this.RedPotionInventory.BackColor = System.Drawing.Color.Transparent;
-            this.RedPotionInventory.BackgroundImage = global::BuckyQuest.Properties.Resources.potion_red;
-            this.RedPotionInventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.RedPotionInventory.Location = new System.Drawing.Point(575, 577);
-            this.RedPotionInventory.Name = "RedPotionInventory";
-            this.RedPotionInventory.Size = new System.Drawing.Size(100, 100);
-            this.RedPotionInventory.TabIndex = 28;
-            this.RedPotionInventory.TabStop = false;
-            this.RedPotionInventory.UseWaitCursor = true;
+            this.redPotionInventory.BackColor = System.Drawing.Color.Transparent;
+            this.redPotionInventory.BackgroundImage = global::BuckyQuest.Properties.Resources.potion_red;
+            this.redPotionInventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.redPotionInventory.Location = new System.Drawing.Point(575, 577);
+            this.redPotionInventory.Name = "redPotionInventory";
+            this.redPotionInventory.Size = new System.Drawing.Size(100, 100);
+            this.redPotionInventory.TabIndex = 28;
+            this.redPotionInventory.TabStop = false;
+            this.redPotionInventory.UseWaitCursor = true;
+            this.redPotionInventory.Click += new System.EventHandler(this.redPotionInventory_Click);
             // 
             // Form1
             // 
@@ -465,23 +477,23 @@
             this.BackgroundImage = global::BuckyQuest.Properties.Resources.dungeon600x400;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 726);
-            this.Controls.Add(this.RedPotionInventory);
-            this.Controls.Add(this.BluePotionInventory);
+            this.Controls.Add(this.redPotionInventory);
+            this.Controls.Add(this.bluePotionInventory);
             this.Controls.Add(this.maceInventory);
             this.Controls.Add(this.bowInventory);
             this.Controls.Add(this.swordInventory);
             this.Controls.Add(this.MoveBox);
             this.Controls.Add(this.AttackBox);
             this.Controls.Add(this.Bucky);
-            this.Controls.Add(this.RedPotion);
-            this.Controls.Add(this.BluePotion);
-            this.Controls.Add(this.Ghoul);
-            this.Controls.Add(this.Ghost);
-            this.Controls.Add(this.Bat);
+            this.Controls.Add(this.redPotionGame);
+            this.Controls.Add(this.bluePotionGame);
+            this.Controls.Add(this.ghoulGame);
+            this.Controls.Add(this.ghostGame);
+            this.Controls.Add(this.batGame);
             this.Controls.Add(this.statsWindow);
-            this.Controls.Add(this.Bow);
-            this.Controls.Add(this.Mace);
-            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.bowGame);
+            this.Controls.Add(this.maceGame);
+            this.Controls.Add(this.swordGame);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -491,21 +503,21 @@
             this.statsWindow.ResumeLayout(false);
             this.statsWindow.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Bucky)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Bat)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ghost)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ghoul)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Bow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Mace)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BluePotion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RedPotion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.batGame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostGame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghoulGame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bowGame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maceGame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bluePotionGame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redPotionGame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.swordGame)).EndInit();
             this.AttackBox.ResumeLayout(false);
             this.MoveBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.swordInventory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bowInventory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maceInventory)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BluePotionInventory)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RedPotionInventory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bluePotionInventory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redPotionInventory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -522,14 +534,14 @@
         private System.Windows.Forms.Label GhoulLabel;
         private System.Windows.Forms.Label ghoulHitPoints;
         private System.Windows.Forms.PictureBox Bucky;
-        private System.Windows.Forms.PictureBox Bat;
-        private System.Windows.Forms.PictureBox Ghost;
-        private System.Windows.Forms.PictureBox Ghoul;
-        private System.Windows.Forms.PictureBox Bow;
-        private System.Windows.Forms.PictureBox Mace;
-        private System.Windows.Forms.PictureBox BluePotion;
-        private System.Windows.Forms.PictureBox RedPotion;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox batGame;
+        private System.Windows.Forms.PictureBox ghostGame;
+        private System.Windows.Forms.PictureBox ghoulGame;
+        private System.Windows.Forms.PictureBox bowGame;
+        private System.Windows.Forms.PictureBox maceGame;
+        private System.Windows.Forms.PictureBox bluePotionGame;
+        private System.Windows.Forms.PictureBox redPotionGame;
+        private System.Windows.Forms.PictureBox swordGame;
         private System.Windows.Forms.GroupBox AttackBox;
         private System.Windows.Forms.Button AttackRightButton;
         private System.Windows.Forms.Button AttackLeftButton;
@@ -543,8 +555,8 @@
         private System.Windows.Forms.PictureBox swordInventory;
         private System.Windows.Forms.PictureBox bowInventory;
         private System.Windows.Forms.PictureBox maceInventory;
-        private System.Windows.Forms.PictureBox BluePotionInventory;
-        private System.Windows.Forms.PictureBox RedPotionInventory;
+        private System.Windows.Forms.PictureBox bluePotionInventory;
+        private System.Windows.Forms.PictureBox redPotionInventory;
     }
 }
 
