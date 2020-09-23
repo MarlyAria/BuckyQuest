@@ -416,7 +416,7 @@
             this.swordInventory.TabIndex = 24;
             this.swordInventory.TabStop = false;
             this.swordInventory.UseWaitCursor = true;
-            this.swordInventory.Click += new System.EventHandler(this.swordInventory_Click);
+            this.swordInventory.Click += new System.EventHandler(this.SwordInventory_Click);
             // 
             // bowInventory
             // 
@@ -442,7 +442,7 @@
             this.maceInventory.TabIndex = 26;
             this.maceInventory.TabStop = false;
             this.maceInventory.UseWaitCursor = true;
-            this.maceInventory.Click += new System.EventHandler(this.maceInventory_Click);
+            this.maceInventory.Click += new System.EventHandler(this.MaceInventory_Click);
             // 
             // bluePotionInventory
             // 
@@ -494,12 +494,13 @@
             this.Controls.Add(this.bowGame);
             this.Controls.Add(this.maceGame);
             this.Controls.Add(this.swordGame);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Bucky\'s Quest";
             this.UseWaitCursor = true;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.statsWindow.ResumeLayout(false);
             this.statsWindow.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Bucky)).EndInit();
@@ -524,7 +525,6 @@
 
         #endregion
         private System.Windows.Forms.TableLayoutPanel statsWindow;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label PlayerLabel;
         private System.Windows.Forms.Label playerHitPoints;
         private System.Windows.Forms.Label BatLabel;

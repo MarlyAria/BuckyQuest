@@ -12,20 +12,22 @@ namespace BuckyQuest
 {
     public partial class Form1 : Form
     {
-        private Game game;
-        private Random random = new Random();
-        List<PictureBox> inventoryBoxes = new List<PictureBox>();
-
         public Form1()
         {
             InitializeComponent();
         }
 
+        private Game game;
+        private Random random = new Random();
+        List<PictureBox> inventoryBoxes = new List<PictureBox>();
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             game = new Game(new Rectangle(154, 96, 1101, 434));
             game.NewLevel(random);
             UpdateCharacter();
+
+            MessageBox.Show("The game start now!");
 
             inventoryBoxes.Add(swordInventory);
             inventoryBoxes.Add(bluePotionInventory);
@@ -33,6 +35,7 @@ namespace BuckyQuest
             inventoryBoxes.Add(redPotionInventory);
             inventoryBoxes.Add(maceInventory);
         }
+        
 
         public void UpdateCharacter()
         {
@@ -169,7 +172,7 @@ namespace BuckyQuest
             }
         }
 
-        public void formEquip(string weaponName, string pictureBoxName)
+        public void FormEquip(string weaponName, string pictureBoxName)
         {
             if (game.CheckPlayerInventory(weaponName) == true)
             {
@@ -237,7 +240,7 @@ namespace BuckyQuest
             UpdateCharacter();
         }
 
-        private void potionEquipButtons()
+        private void PotionEquipButtons()
         {
             AttackDownButton.Visible = false;
             AttackLeftButton.Visible = false;
@@ -253,34 +256,34 @@ namespace BuckyQuest
             AttackDownButton.Visible = true;               ;
         }
 
-        private void swordInventory_Click(object sender, EventArgs e)
+        private void SwordInventory_Click(object sender, EventArgs e)
         {
-            formEquip("Sword", "swordInventory");
+            FormEquip("Sword", "swordInventory");
             WeaponEquipButtons();
         }
 
         private void bowInventory_Click(object sender, EventArgs e)
         {
-            formEquip("Bow", "bowInventory");
+            FormEquip("Bow", "bowInventory");
             WeaponEquipButtons();
         }
 
-        private void maceInventory_Click(object sender, EventArgs e)
+        private void MaceInventory_Click(object sender, EventArgs e)
         {
-            formEquip("Mace", "maceInventory");
+            FormEquip("Mace", "maceInventory");
             WeaponEquipButtons();
         }
 
         private void bluePotionInventory_Click(object sender, EventArgs e)
         {
-            formEquip("Blue Potion", "bluePotionInventory");
-            potionEquipButtons();
+            FormEquip("Blue Potion", "bluePotionInventory");
+            PotionEquipButtons();
         }
 
         private void redPotionInventory_Click(object sender, EventArgs e)
         {
-            formEquip("Red Potion", "redPotionInventory");
-            potionEquipButtons();
+            FormEquip("Red Potion", "redPotionInventory");
+            PotionEquipButtons();
         }
     }
 }
